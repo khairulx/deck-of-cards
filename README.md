@@ -20,18 +20,18 @@ HTML and JQUERY are  used as frontend to handle the form and show the result.
 ## Virtual Enviroment:
  Homestead
 - Vagrant This will allow us to use the Homestead box. Installation is a step-by-step process.
-- Virtualbox This is the virtualisation software used with Vagrant. Vagrant works with other programs, but this is the most popular and  is free. Installation is again a step-by-step process.
+- Virtualbox This is the virtualisation software used with Vagrant. 
 
 ## Install Homestead directly into your project
 
 ```
-git clone git@github.com:khairulx/deck-of-cards.git deck_of_cards
+git clone git@github.com:khairulx/deck-of-cards.git deck-of-cards
 
-cd deck_of_cards
+cd deck-of-cards
 
 composer require laravel/homestead --dev
 
-cp env.example .env
+cp .env.example .env
 
 - Windows
 vendor\\bin\\homestead make
@@ -45,6 +45,14 @@ After the Homestead file has been (optionally) configured, you can now spin up t
 
 ```
 vagrant up
+
+192.168.10.10 or homestead.test
+
+```
+Changes Homestead.yaml
+
+```
+vagrant reload --provision
 
 ```
 

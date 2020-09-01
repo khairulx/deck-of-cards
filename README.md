@@ -33,6 +33,8 @@ composer require laravel/homestead --dev
 
 cp .env.example .env
 
+php artisan key:generate
+
 - Windows
 vendor\\bin\\homestead make
 

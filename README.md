@@ -59,4 +59,5 @@ vagrant reload --provision
 ```
 
 ## Contact
-If there's any question, feels free to email me at `khairulhafizbramli@gmail.com`.
+If you have any question to ask, please email me at [khairulhafizbramli@gmail.com](mailto:khairulhafizbramli@gmail.com). 
+

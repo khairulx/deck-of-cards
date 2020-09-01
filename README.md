@@ -1,33 +1,41 @@
-# Playing Card Distribution
-Simple playing card distribution to distribute `52` cards to `n (number)` of player randomly and show the result without overlapping cards in players result set..
+# Deck of Card Test
+Playing cards will be given out to n(number) people
+Theme: Playing cards will be given out to n(number) people
+Purpose: Total 52 cards containing 1-13 of each Spade(S), Heart(H), Diamond(D), Club(C) will be
+given to n people randomly.
 
-## Explanation
-### Backend
-Backend is coded using Laravel Framework version 7.5. Eventhough the it a simple backend process, using the framework will make it flexible for future enhancement.
+## Technology Used
+- Laravel 7.5
+- HTML/jQuery
+- Bootstrap
 
-`app/Http/Controller/HomeController@index` - Alghorithm to distribute `52` cards to  `n` (number) of player randomly 
+## Frontend and Backend Explaination Detail
+Laravel Framework  is used as backend to simply the process abd flexibility to enhance in the future.
+HomeController@index - Alghorithm to distribute 52 cards to n (number) of player randomly
+HomeController@card - Card type and numbers.
 
-`app/Http/Controller/HomeController@card` - Card type and numbers.
+HTML and JQUERY are  used as frontendto handle the form the
 
-### Frontend
-Frontend is coded using HTML to create the form input and with jQuery to retrieve the result of card distribution from backend.
-
-`resources/view/home/index.blade.php` - Form and result page.
- 
 ## Virtual Enviroment:
-- Vagrant
+ Homestead
+-  Vagrant This will allow us to use the Homestead box. Installation is a step-by-step process.
+- Virtualbox This is the virtualisation software used with Vagrant. Vagrant works with other programs, but this is the most popular and  is free. Installation is again a step-by-step process.
 
-## Language Used:
-- Laravel 7.5 `{backend}`
-- HTML/jQuery `{frontend}`
-- Bootstrap UI
+# Windows
+vendor\\bin\\homestead make
+
+# Mac / Linux
+php vendor/bin/homestead make
+
+vagrant up
+
 
 ## Installation
 Clone the repo on your development/test environment
 
 ```
-git clone https://github.com/afiqjamil/laravel-card-distribution.git laravel_card_distribution
-cd laravel_card_distribution
+git clone git@github.com:khairulx/deck-of-cards.git deck_of_cards
+cd deck_of_cards
 composer install
 cp env.example .env
 ```
